@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Stabielator")
-		(date "2026-08-31")
+		(date "2026-09-07")
 		(rev "v0.1")
 		(company "ProtoIoT")
 		(comment 1 "Wietse Houwers")
@@ -1312,6 +1312,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+BATT"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+BATT"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+BATT\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power battery"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+BATT_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+BATT_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1427,145 +1566,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 160.02 16.51)
@@ -1601,6 +1601,16 @@
 		)
 		(uuid "55488c85-07c5-4eef-87fe-fc4e6357c9ba")
 	)
+	(text "Verplaatst van batt naar 3.3v om standby instabiliteit te voorkomen"
+		(exclude_from_sim no)
+		(at 223.52 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5a12f91f-0e88-47f7-b3e3-c20a6aad4d73")
+	)
 	(text "Resistor networks zijn ook mogelijk\nAls pcb ruimte te weinig blijkt"
 		(exclude_from_sim no)
 		(at 70.866 67.31 0)
@@ -1620,6 +1630,18 @@
 			)
 		)
 		(uuid "c63bd402-0a3c-45f4-b33d-611e52c11b48")
+	)
+	(junction
+		(at 285.75 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0355e7c4-6a12-4b9c-bb8f-550575b5b44b")
+	)
+	(junction
+		(at 45.72 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0623f326-3455-49c0-8c9b-cda9724dd98d")
 	)
 	(junction
 		(at 68.58 138.43)
@@ -1688,34 +1710,22 @@
 		(uuid "2e39ddd1-f300-41be-b981-53b0caf9506f")
 	)
 	(junction
-		(at 285.75 219.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d07437b-ffc1-4963-a393-ef58e4c75383")
-	)
-	(junction
 		(at 295.91 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d7c7e4f-25cd-4f4c-b7bc-9364be0a080d")
 	)
 	(junction
-		(at 285.75 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4232ebd6-eda9-4c0d-b24b-05832cde155f")
-	)
-	(junction
-		(at 285.75 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4abfcc32-00c4-48e6-a92d-56a54087ac34")
-	)
-	(junction
 		(at 275.59 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4af27e96-4a83-4fe5-b2cf-9e0bf36ee26d")
+	)
+	(junction
+		(at 285.75 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5006e102-1236-416b-9c21-971f9ea721e0")
 	)
 	(junction
 		(at 62.23 105.41)
@@ -1740,12 +1750,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79a456a7-bc14-4794-a985-240ae926239d")
-	)
-	(junction
-		(at 53.34 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8042760b-23ea-4854-a5e8-63eaa6c1c638")
 	)
 	(junction
 		(at 275.59 228.6)
@@ -1814,16 +1818,16 @@
 		(uuid "c036f454-1a17-4b07-9fef-a056a28dba5f")
 	)
 	(junction
+		(at 285.75 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4a49110-ae91-43fb-a863-ece6854be7a3")
+	)
+	(junction
 		(at 259.08 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd0c78b3-97b4-4c77-8595-aad63e3fcf03")
-	)
-	(junction
-		(at 285.75 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d1873dde-8a1e-4321-a9cb-a3bc8ee4751b")
 	)
 	(junction
 		(at 275.59 173.99)
@@ -1848,6 +1852,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed2b24b1-b6c9-407c-9a4b-b63675058758")
+	)
+	(junction
+		(at 285.75 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2d97561-6b07-4b75-887b-50f23029a3ae")
 	)
 	(junction
 		(at 223.52 46.99)
@@ -2259,7 +2269,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 87.63) (xy 53.34 87.63)
+			(xy 45.72 87.63) (xy 62.23 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2366,16 +2376,6 @@
 			(type default)
 		)
 		(uuid "6cb5f79b-a3e3-4c0c-9352-e08d85c4c393")
-	)
-	(wire
-		(pts
-			(xy 62.23 87.63) (xy 53.34 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71038612-72c1-4891-85e7-761db7449173")
 	)
 	(wire
 		(pts
@@ -3217,6 +3217,54 @@
 		)
 		(uuid "fff9218b-a503-46f4-ba23-a8e8a7ce8963")
 	)
+	(global_label "POWERSTATE"
+		(shape input)
+		(at 246.38 219.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3037853a-638d-4845-81b0-3dcc711cae34")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.5416 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "POWERSTATE"
+		(shape input)
+		(at 246.38 107.95 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ac2d06a-6ef7-4f09-a189-b6cd8a0c8625")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.5416 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SDA"
 		(shape input)
 		(at 55.88 105.41 180)
@@ -3254,6 +3302,54 @@
 		(uuid "c092fed0-15a0-4496-a466-37f2991d5a56")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 49.3872 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "POWERSTATE"
+		(shape input)
+		(at 246.38 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da13f520-0d0d-4e18-88d3-e4ef0773c9aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.5416 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "POWERSTATE"
+		(shape input)
+		(at 246.38 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcb10797-ad05-4933-a72d-b80814a57c5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.5416 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3437,7 +3533,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 53.34 87.63 0)
+		(at 45.72 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3448,7 +3544,7 @@
 		(fields_autoplaced yes)
 		(uuid "04e4b124-11f9-4f9f-943a-56a951726266")
 		(property "Reference" "#PWR07"
-			(at 53.34 91.44 0)
+			(at 45.72 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3459,7 +3555,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 53.34 82.55 0)
+			(at 45.72 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3469,7 +3565,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 87.63 0)
+			(at 45.72 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3480,7 +3576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 87.63 0)
+			(at 45.72 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3491,7 +3587,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 53.34 87.63 0)
+			(at 45.72 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3508,6 +3604,83 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 259.08 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "071903b8-9bac-4117-bf9a-4962f4ffcf34")
+		(property "Reference" "#PWR0131"
+			(at 259.08 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 259.08 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c18da281-0363-4142-b4fc-4be636a0875d")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -3696,85 +3869,6 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 246.38 107.95 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ac22aa3-d4cf-4f34-8ebc-f483f7004d34")
-		(property "Reference" "#PWR052"
-			(at 250.19 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 242.57 107.9499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 246.38 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2ab8b76b-07cd-44ed-87df-48470f697062")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -4219,6 +4313,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 259.08 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17794e9d-1a20-4578-b150-7b63f36c8eaf")
+		(property "Reference" "#PWR0137"
+			(at 259.08 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 259.08 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 259.08 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "14103e50-6d15-452f-890f-7ccc2130dd55")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR0137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 68.58 151.13 0)
 		(unit 1)
@@ -4467,85 +4638,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 246.38 219.71 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "298023ba-23a0-4482-aa58-5cd9d0e7304a")
-		(property "Reference" "#PWR050"
-			(at 250.19 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 242.57 219.7099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 246.38 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "edf8fd17-f0f3-4cb1-9d45-f11acce4ae80")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Driver:DRV2605LDGS")
 		(at 259.08 160.02 0)
 		(unit 1)
@@ -4741,6 +4833,161 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 259.08 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "305576ec-afd0-44e7-8a8b-d533b5f37340")
+		(property "Reference" "#PWR0133"
+			(at 259.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 259.08 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b95eebb-9bfc-4960-8ae7-86c7a384bad4")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 223.52 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30d49d58-4d9d-4a99-84fe-02960fc6bc72")
+		(property "Reference" "#PWR029"
+			(at 223.52 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 223.52 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 223.52 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a45ac0dc-b979-44a4-a003-635ae05dfcab")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 275.59 62.23 0)
 		(unit 1)
@@ -4833,8 +5080,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 223.52 191.77 0)
+		(lib_id "power:+BATT")
+		(at 285.75 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4842,10 +5089,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "380c0208-6f73-4240-a3db-54fd86e8b5d1")
-		(property "Reference" "#PWR049"
-			(at 223.52 195.58 0)
+		(uuid "37a6e50c-b448-41e1-b8a5-611bc4ad2f8b")
+		(property "Reference" "#PWR0136"
+			(at 285.75 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4856,7 +5102,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 223.52 186.69 0)
+			(at 285.75 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4866,7 +5112,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 191.77 0)
+			(at 285.75 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4877,7 +5123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 191.77 0)
+			(at 285.75 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4887,8 +5133,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 223.52 191.77 0)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 285.75 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4899,12 +5145,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d00f7873-67df-433a-8e3f-a59ca217dd9e")
+			(uuid "5eccb329-1387-4247-97ea-ea8997dbff17")
 		)
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR049")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -5304,6 +5550,161 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 285.75 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5be1c4c0-0867-4f30-886e-f51f0ba037e2")
+		(property "Reference" "#PWR0134"
+			(at 285.75 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 285.75 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 285.75 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 285.75 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b1a295b-bedd-4ba9-b733-cea1c100738f")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR0134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 223.52 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5faa4139-0b46-4048-b0cc-5039fdf6e700")
+		(property "Reference" "#PWR015"
+			(at 223.52 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 223.52 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 223.52 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e0692ba-1e66-429d-8984-0526ed9dd967")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 55.88 143.51 180)
 		(unit 1)
@@ -5396,84 +5797,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 259.08 204.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61547fc1-8848-4807-9f56-0ce6639b5f01")
-		(property "Reference" "#PWR041"
-			(at 259.08 208.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 259.08 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 259.08 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "567cdd59-c80e-4fbb-a7e8-b01a182d3a1e")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 246.38 105.41 270)
 		(unit 1)
@@ -5547,163 +5870,6 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 285.75 57.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6257a10f-d329-45de-8c3b-8dff65e9af05")
-		(property "Reference" "#PWR045"
-			(at 285.75 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 285.75 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 285.75 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 285.75 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 285.75 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d6896e05-8594-4e74-a3d1-01afd64c02be")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 246.38 57.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "664e5eef-97a7-4f84-85fe-a639ed304e1d")
-		(property "Reference" "#PWR053"
-			(at 250.19 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 242.57 57.1499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 246.38 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "388e9958-4b96-471e-8548-473d9edcfae5")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5796,84 +5962,6 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 223.52 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b9647d8-bc94-43a4-8dd9-72b40ce3b681")
-		(property "Reference" "#PWR046"
-			(at 223.52 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 223.52 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 223.52 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "45ec2b0d-758a-44d8-b026-95e86f1ab1e1")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -6089,84 +6177,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 285.75 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81c34e43-4151-46c7-8f02-4cf7c99032fe")
-		(property "Reference" "#PWR043"
-			(at 285.75 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 285.75 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 285.75 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 285.75 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 285.75 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c37d9d66-7114-44bd-8dce-befb83f4306b")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 45.72 104.14 0)
 		(unit 1)
@@ -6351,6 +6361,161 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 223.52 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93bebdb0-1dd2-4d5b-8037-88cc96b90930")
+		(property "Reference" "#PWR046"
+			(at 223.52 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 223.52 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 223.52 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74ee6cf7-ce15-4d05-99d1-10e8511b730f")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 285.75 219.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95003af5-2ea8-41b7-ba0c-7d72c8bbd4a8")
+		(property "Reference" "#PWR0138"
+			(at 285.75 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 285.75 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 285.75 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 285.75 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1b02f39-263c-486c-be2f-54b54d4091e4")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR0138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 223.52 143.51 0)
 		(unit 1)
@@ -6437,6 +6602,84 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 223.52 191.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96b69cd5-607c-4f04-885e-e99fc868c6b3")
+		(property "Reference" "#PWR047"
+			(at 223.52 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 223.52 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 223.52 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e10b07d8-c1a1-4bf2-aa27-063657d99885")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6832,10 +7075,6 @@
 		)
 		(instances
 			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3"
-					(reference "U1")
-					(unit 1)
-				)
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "U1")
 					(unit 1)
@@ -7106,84 +7345,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 259.08 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6e412ec-33f2-43e1-b8ad-077647d7c5d6")
-		(property "Reference" "#PWR038"
-			(at 259.08 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 259.08 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 259.08 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cff95260-c0e2-4476-b1be-8dd066aa4d00")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 295.91 170.18 0)
 		(unit 1)
@@ -7276,162 +7437,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 259.08 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba951cb3-f0cf-446f-a2b7-0681c4cbd4fa")
-		(property "Reference" "#PWR039"
-			(at 259.08 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 259.08 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 259.08 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0bf0ce4d-fc5e-47a6-bc51-0a56c4b3930f")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 223.52 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bcf24c68-be17-416c-b409-35547a3423ec")
-		(property "Reference" "#PWR047"
-			(at 223.52 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 223.52 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 223.52 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bc692bf5-9478-4667-81e0-408f025c1c89")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 55.88 139.7 0)
 		(unit 1)
@@ -7510,7 +7515,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
+		(lib_id "power:+BATT")
 		(at 259.08 149.86 0)
 		(unit 1)
 		(body_style 1)
@@ -7519,9 +7524,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c388aeec-aa2d-4a48-9af6-49540d86b2d7")
-		(property "Reference" "#PWR040"
+		(uuid "c36a8dfd-d9a7-4c58-b377-47bb38e649ef")
+		(property "Reference" "#PWR0135"
 			(at 259.08 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -7533,7 +7537,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 259.08 144.78 0)
+			(at 259.08 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7564,7 +7568,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
 			(at 259.08 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -7576,20 +7580,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "7cc4365f-9719-4c22-a9f4-7f44876d1b01")
+			(uuid "6e31717f-8e2d-477c-8a24-9fbd73d81aae")
 		)
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR040")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 246.38 165.1 90)
+		(lib_id "power:+BATT")
+		(at 285.75 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7597,10 +7601,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8c44388-ab7f-4229-a96e-76e9c873b557")
-		(property "Reference" "#PWR051"
-			(at 250.19 165.1 0)
+		(uuid "c4bf446a-a6b6-4f8a-b80a-3e0d0952d044")
+		(property "Reference" "#PWR0132"
+			(at 285.75 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7611,18 +7614,17 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 242.57 165.0999 90)
+			(at 285.75 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 165.1 0)
+			(at 285.75 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7633,7 +7635,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 165.1 0)
+			(at 285.75 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7643,8 +7645,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 246.38 165.1 0)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 285.75 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7655,12 +7657,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "95242445-9bc1-44c9-9084-77489d04acef")
+			(uuid "5c6f7477-f611-4d12-918c-4ce7d299b651")
 		)
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR051")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -7851,84 +7853,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 223.52 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d9d842b4-64a2-4e99-bd39-87d2b532dd87")
-		(property "Reference" "#PWR048"
-			(at 223.52 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 223.52 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 223.52 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c0afd357-1bd5-45de-a338-2cf0006390ad")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 246.38 54.61 270)
 		(unit 1)
@@ -8002,84 +7926,6 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 285.75 219.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1b16b28-ff2e-445a-8381-d64248523aa1")
-		(property "Reference" "#PWR044"
-			(at 285.75 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 285.75 214.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 285.75 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 285.75 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 285.75 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ceddfa1-9ad7-4c0c-8255-5bd31524a9aa")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -8307,84 +8153,6 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 285.75 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f846b5de-56f8-48cf-b1e9-a971eed884fc")
-		(property "Reference" "#PWR042"
-			(at 285.75 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 285.75 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 285.75 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 285.75 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 285.75 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d870a412-7b49-4abe-8764-73fd9e3a853f")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR042")
 					(unit 1)
 				)
 			)
