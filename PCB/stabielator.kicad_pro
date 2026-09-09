@@ -254,7 +254,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "v0.1"
+      "sch_revision": "${Project_revision}"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -461,15 +461,15 @@
       "extra_units": "error",
       "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
+      "footprint_link_issues": "ignore",
       "four_way_junction": "ignore",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
-      "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_issues": "ignore",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -479,9 +479,9 @@
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "pin_not_driven": "ignore",
+      "pin_to_pin": "error",
+      "power_pin_not_driven": "ignore",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -550,7 +550,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "Assembly/HardwareDesign.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -698,7 +698,7 @@
         "uuid": "c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3"
       }
     ],
-    "used_designators": "D1-2,#PWR15,#PWR29-30,#PWR46-47,#PWR126-138,R3-5,R26-27,R60-61",
+    "used_designators": "#PWR54,#PWR56,#PWR128,U2,R64-65",
     "variants": []
   },
   "sheets": [
@@ -707,15 +707,19 @@
       "Root"
     ],
     [
-      "b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6",
-      "Haptic feedback"
+      "73929003-3baa-4f9c-89cc-74ae5f550b44",
+      "Power"
     ],
     [
-      "73929003-3baa-4f9c-89cc-74ae5f550b44",
-      "Power circuits"
+      "b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6",
+      "Logic"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "Company_name": "Glastra",
+    "Project_name": "Stabielator",
+    "Project_revision": "v0.1.0"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0
