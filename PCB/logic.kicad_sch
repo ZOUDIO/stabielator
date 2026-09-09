@@ -7582,30 +7582,6 @@
 			)
 		)
 	)
-	(global_label "3V3_EN"
-		(shape input)
-		(at 314.96 190.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6c0fd539-0818-4a06-8a4b-c6311e35c15a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 305.0201 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "IMU_RST"
 		(shape input)
 		(at 50.8 157.48 180)
@@ -7726,54 +7702,6 @@
 			)
 		)
 	)
-	(global_label "3V3_EN"
-		(shape input)
-		(at 312.42 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cfcb44df-f2a3-4793-adec-9ca8e6fa2b2d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 302.4801 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "3V3_EN"
-		(shape input)
-		(at 312.42 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d8733b8f-68fe-4ec2-a788-ce88572f0cf0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 302.4801 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "SCL"
 		(shape bidirectional)
 		(at 215.9 55.88 180)
@@ -7835,30 +7763,6 @@
 		(uuid "ec85e23c-39fe-4f56-861c-c404e2906cc9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 143.7301 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "3V3_EN"
-		(shape input)
-		(at 314.96 147.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ecc381a7-16a3-4a5a-b2aa-4f8de1bf56f7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 305.0201 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8579,83 +8483,6 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "R45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 365.76 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1d684663-9745-476d-97a6-87fbbce592b6")
-		(property "Reference" "#PWR011"
-			(at 365.76 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSYS"
-			(at 365.76 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 365.76 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3e754a69-24dc-4341-9bcb-36d13af6f1f2")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -9739,6 +9566,83 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 365.76 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "34e2da01-0858-4414-9502-a0b6729c3a02")
+		(property "Reference" "#PWR011"
+			(at 365.76 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 365.76 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 365.76 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 365.76 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33b240d5-0fc9-4c42-9eee-0c59e0541076")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -11221,83 +11125,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 363.22 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "637c0244-b312-4cb3-a73e-1ef3ccd3668d")
-		(property "Reference" "#PWR010"
-			(at 363.22 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSYS"
-			(at 363.22 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 363.22 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 363.22 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "672dd053-d96c-4958-b630-bcb44606a56d")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "C_2")
 		(lib_id "Zotec:C")
 		(at 60.96 60.96 0)
@@ -11396,6 +11223,83 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 365.76 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c383de0-d39f-4f25-aa44-80d390261a8d")
+		(property "Reference" "#PWR012"
+			(at 365.76 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 365.76 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 365.76 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 365.76 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb5c545a-47f1-4e75-b62b-3567d86a5475")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -12240,83 +12144,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 365.76 190.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "774aa1b0-d71a-43a8-9c91-158a2e545bd3")
-		(property "Reference" "#PWR012"
-			(at 365.76 194.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSYS"
-			(at 365.76 186.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 365.76 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "463f5176-d27f-421b-a695-20c8595d349d")
-		)
-		(instances
-			(project "stabielator"
-				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Zotec:R")
 		(at 40.64 172.72 90)
 		(unit 1)
@@ -12501,6 +12328,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 312.42 106.68 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80e00bdb-fea9-4fc7-bc6e-41dd5620b9c5")
+		(property "Reference" "#PWR024"
+			(at 316.23 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 307.34 106.68 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 312.42 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8bdf49d-5f2f-4771-a8eb-4c2f7a1d9f12")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Zotec:C")
 		(at 363.22 68.58 0)
 		(unit 1)
@@ -12664,6 +12568,83 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 363.22 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "87b73abf-a310-4d95-9155-fe948174e9fa")
+		(property "Reference" "#PWR010"
+			(at 363.22 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 363.22 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 363.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 363.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 363.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b898f927-fdad-4830-984e-0f5c8eac5e6f")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -12917,7 +12898,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 363.22 63.5 0)
+		(at 314.96 147.32 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12925,9 +12906,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "91fb6937-253c-42fa-b1cf-85343697d782")
-		(property "Reference" "#PWR09"
-			(at 363.22 67.31 0)
+		(uuid "93c19875-d523-4c51-a842-ad3666176698")
+		(property "Reference" "#PWR020"
+			(at 318.77 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12937,8 +12918,8 @@
 				)
 			)
 		)
-		(property "Value" "VSYS"
-			(at 363.22 59.69 0)
+		(property "Value" "3V3"
+			(at 309.88 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12948,7 +12929,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 363.22 63.5 0)
+			(at 314.96 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12959,7 +12940,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 363.22 63.5 0)
+			(at 314.96 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12970,7 +12951,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 363.22 63.5 0)
+			(at 314.96 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12981,12 +12962,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "60074a4e-727a-42c6-bcc0-72336b421fa5")
+			(uuid "b07a0c5e-ead7-4aef-9116-ea2a076cd80a")
 		)
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
-					(reference "#PWR09")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -13921,6 +13902,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 363.22 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a740f88b-954c-4ae3-a9df-1d6ce398e535")
+		(property "Reference" "#PWR09"
+			(at 363.22 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 363.22 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 363.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 363.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 363.22 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7bc25458-7d48-45db-88f0-c1ae4a436d40")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Zotec:R")
 		(at 175.26 40.64 0)
 		(unit 1)
@@ -14365,6 +14423,83 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 314.96 190.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b673636e-a855-4545-a308-1d42b13d0281")
+		(property "Reference" "#PWR019"
+			(at 318.77 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 309.88 190.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 314.96 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9066157-6439-4f6b-a039-1ba471853f41")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -16106,6 +16241,83 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 312.42 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb9a63a3-dc7f-4d3d-b572-77eb69dc6949")
+		(property "Reference" "#PWR025"
+			(at 316.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 307.34 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 312.42 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c66c7c12-1a3a-4b19-85c0-7792410c8cab")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
