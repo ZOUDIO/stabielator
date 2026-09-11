@@ -371,7 +371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04fe2425-b435-4b0f-be13-04186f789ba8")
-		(property "Reference" "H3"
+		(property "Reference" "H4"
 			(at 92.71 97.7899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -465,7 +465,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3"
-					(reference "H3")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -561,7 +561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e65fd8c-b557-4d57-aaf8-4f3a8aa035e9")
-		(property "Reference" "H4"
+		(property "Reference" "H3"
 			(at 92.71 102.8699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -655,7 +655,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3"
-					(reference "H4")
+					(reference "H3")
 					(unit 1)
 				)
 			)
