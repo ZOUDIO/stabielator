@@ -437,6 +437,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 88.9 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
+			(at 88.9 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d1d7a78f-137f-4de6-aa8f-c6c5f3400ee7")
 		)
@@ -605,6 +627,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 88.9 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
+			(at 88.9 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a45ddccb-6089-4b2d-b55e-178b96b1fb8b")
 		)
@@ -695,6 +739,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 88.9 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
+			(at 88.9 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f3e4a373-5c9c-488c-8a2e-1d1b1a4a8474")
 		)
@@ -775,6 +841,28 @@
 			)
 		)
 		(property "Digikey" "nvt"
+			(at 88.9 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 88.9 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
 			(at 88.9 93.98 90)
 			(hide yes)
 			(show_name no)

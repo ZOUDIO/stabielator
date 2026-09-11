@@ -6623,6 +6623,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "onsemi"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "2N7002"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "09cc5503-b14c-4242-9ab7-7a34a70a9767")
 		)
@@ -6730,6 +6752,28 @@
 			)
 		)
 		(property "Digikey" "490-14466-1-ND"
+			(at 110.49 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 110.49 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "GRM21BR71C475KE51L"
 			(at 110.49 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -6854,6 +6898,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 25.4 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "GRM21BR71C105KA01L"
+			(at 25.4 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "559420a0-85e8-45a1-8667-417a7f2799d0")
 		)
@@ -6936,6 +7002,28 @@
 			)
 		)
 		(property "Digikey" "311-1.13KHRCT-ND"
+			(at 53.34 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 53.34 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-071K13L"
 			(at 53.34 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7106,6 +7194,28 @@
 			)
 		)
 		(property "Digikey" "455-S2B-PH-SM4-TBCT-ND"
+			(at 125.73 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JST Sales America Inc."
+			(at 125.73 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "S2B-PH-SM4-TB"
 			(at 125.73 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -7288,6 +7398,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 252.73 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
+			(at 252.73 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7045c1db-0f72-4646-a284-207ffe442cce")
 		)
@@ -7453,6 +7585,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 262.89 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "CGA5L1X7R1C106K160AC"
+			(at 262.89 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9aef3eff-84cc-44f9-8d35-ca072a3448ec")
 		)
@@ -7534,6 +7688,28 @@
 			)
 		)
 		(property "Digikey" "445-12902-1-ND"
+			(at 252.73 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 252.73 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "CGA5L1X7R1C106K160AC"
 			(at 252.73 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7636,6 +7812,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 243.84 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "C1608X7R1H472K080AE"
+			(at 243.84 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "57b9e71f-9fe4-44c5-9240-d762fa75bdfa")
 		)
@@ -7728,6 +7926,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 161.29 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "C0603C104K5RACTU"
+			(at 161.29 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "28b50f14-fa5b-4ec9-89f4-4239dc55d36b")
 		)
@@ -7810,6 +8030,28 @@
 			)
 		)
 		(property "Digikey" "YAG1627CT-ND"
+			(at 146.05 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 146.05 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RT0603BRD07300KL"
 			(at 146.05 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8163,6 +8405,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 116.84 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "AC0603FR-0722RL"
+			(at 116.84 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "75748046-cc3f-4e2e-9264-29591570c34f")
 		)
@@ -8400,6 +8664,28 @@
 			)
 		)
 		(property "Digikey" "311-100KHRCT-ND"
+			(at 180.34 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 180.34 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-07100KL"
 			(at 180.34 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8655,6 +8941,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 233.68 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "TPS63001DRCR"
+			(at 233.68 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "11"
 			(uuid "2d7a1f95-143e-4ed4-a1dc-71d4fd074646")
 		)
@@ -8764,6 +9072,28 @@
 			)
 		)
 		(property "Digikey" "311-1.00KHRCT-ND"
+			(at 139.7 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 139.7 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-071KL"
 			(at 139.7 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9097,6 +9427,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 266.7 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "C0603C104K5RACTU"
+			(at 266.7 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4d42ce64-2689-45a2-829e-7e1fde7f7506")
 		)
@@ -9277,6 +9629,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 139.7 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "150060RS55040"
+			(at 139.7 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A"
 			(uuid "21258f97-5f69-4887-9a6a-774f56a1cbad")
 		)
@@ -9389,6 +9763,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 109.22 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "AC0603FR-0722RL"
+			(at 109.22 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "82295e7d-3925-478c-b9ba-5319e6843fe0")
 		)
@@ -9471,6 +9867,28 @@
 			)
 		)
 		(property "Digikey" "311-10.0KHRCT-ND"
+			(at 101.6 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 101.6 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-0710KL"
 			(at 101.6 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -9597,6 +10015,28 @@
 			)
 		)
 		(property "Digikey" "399-C1206C102KGRACTUCT-ND"
+			(at 27.94 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" " KEMET"
+			(at 27.94 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "C1206C102KGRACTU"
 			(at 27.94 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -9766,6 +10206,28 @@
 			)
 		)
 		(property "Digikey" "296-TPS3424A11C13ADRLRCT-ND"
+			(at 220.98 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 220.98 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "TPS3424A11C13ADRLR"
 			(at 220.98 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -9955,6 +10417,28 @@
 			)
 		)
 		(property "Digikey" "2073-USB4105-GF-ACT-ND"
+			(at 58.42 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "GCT"
+			(at 58.42 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "USB4105-GF-A"
 			(at 58.42 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -10343,6 +10827,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Bourns Inc."
+			(at 217.17 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "SRN4018-2R2M"
+			(at 217.17 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dfff0a43-ec92-419f-bf03-98d70885bd31")
 		)
@@ -10589,6 +11095,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 198.12 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "C0603C104K5RACTU"
+			(at 198.12 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "26672429-cf3c-4b1c-ad6f-015dc9b163ff")
 		)
@@ -10673,6 +11201,28 @@
 			)
 		)
 		(property "Digikey" "nvt"
+			(at 111.76 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 111.76 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
 			(at 111.76 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10839,6 +11389,28 @@
 			)
 		)
 		(property "Digikey" "311-10.0KHRCT-ND"
+			(at 193.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 193.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-0710KL"
 			(at 193.04 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -11117,6 +11689,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 139.7 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "GRM21BR71C475KE51L"
+			(at 139.7 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2dc87f2e-e835-4f48-8fb1-8735f54ad817")
 		)
@@ -11286,6 +11880,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 33.02 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-071K18L"
+			(at 33.02 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5dbf1080-165c-4969-80a5-fce83cb2496b")
 		)
@@ -11368,6 +11984,28 @@
 			)
 		)
 		(property "Digikey" "YAG1235CT-ND"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RT0603BRD07100KL"
 			(at 146.05 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -11881,6 +12519,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Shenzhen Slkormicro Semicon Co., Ltd."
+			(at 93.98 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "USBLC6-2SC6"
+			(at 93.98 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "402c021e-7e75-4e94-a99e-056563ba63ad")
 		)
@@ -11997,6 +12657,28 @@
 			)
 		)
 		(property "Digikey" "YAG3621CT-ND"
+			(at 93.98 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 93.98 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "AC0603FR-075K1L"
 			(at 93.98 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -12177,6 +12859,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 68.58 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "BQ24074RGTR"
+			(at 68.58 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "10052dfa-2d6e-449b-a48a-fa022edbb60f")
 		)
@@ -12335,6 +13039,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Bel Fuse Inc."
+			(at 102.87 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "0ZCK0100FF2E"
+			(at 102.87 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e0b80020-e9c6-48e6-a8d8-068ada25947d")
 		)
@@ -12449,6 +13175,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 40.64 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-071ML"
+			(at 40.64 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "de685ccb-c180-4f1f-8f83-81c464f0ede8")
 		)
@@ -12541,6 +13289,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 43.18 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-0746K4L"
+			(at 43.18 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "034340d8-2537-4be1-af2b-b8069853bd05")
 		)
@@ -12623,6 +13393,28 @@
 			)
 		)
 		(property "Digikey" "311-100HRCT-ND"
+			(at 198.12 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 198.12 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-07100RL"
 			(at 198.12 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -12792,6 +13584,28 @@
 			)
 		)
 		(property "Digikey" "nvt"
+			(at 198.12 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 198.12 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
 			(at 198.12 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -13298,6 +14112,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 86.36 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "AC0603FR-075K1L"
+			(at 86.36 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "23c7bf05-3bb2-4fc3-98c6-4aedd8b16520")
 		)
@@ -13381,6 +14217,28 @@
 			)
 		)
 		(property "Digikey" "4809-SKRTLAE010CT-ND"
+			(at 218.44 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 218.44 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "SKRTLAE010"
 			(at 218.44 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -13549,6 +14407,28 @@
 			)
 		)
 		(property "Digikey" "445-12902-1-ND"
+			(at 185.42 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 185.42 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "CGA5L1X7R1C106K160AC"
 			(at 185.42 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -13805,6 +14685,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 177.8 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "RC0603FR-071KL"
+			(at 177.8 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ccb0fa50-29fc-4574-bcf8-307e243b7358")
 		)
@@ -13888,6 +14790,28 @@
 			)
 		)
 		(property "Digikey" "nvt"
+			(at 111.76 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 111.76 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
 			(at 111.76 134.62 0)
 			(hide yes)
 			(show_name no)
