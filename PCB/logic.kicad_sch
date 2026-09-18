@@ -4346,6 +4346,17 @@
 		)
 		(uuid "b91dbc25-614e-455e-9424-a920ae9bdd5c")
 	)
+	(text "Correctie!! wel adres 0x4a"
+		(exclude_from_sim no)
+		(at 55.626 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "debd5750-065d-4608-ae4e-020c7e5056b7")
+	)
 	(text "Motor 4"
 		(exclude_from_sim no)
 		(at 383.54 189.23 0)
@@ -4373,6 +4384,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ee4243b-eaf5-43c9-8e4e-35e6822926e6")
+	)
+	(junction
+		(at 218.44 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11d50cea-7487-4422-984d-9caa2fa2b4e6")
 	)
 	(junction
 		(at 175.26 63.5)
@@ -4417,10 +4434,10 @@
 		(uuid "3fef2d0e-77a1-46db-a46a-900058dc5bb8")
 	)
 	(junction
-		(at 53.34 165.1)
+		(at 40.64 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "40c93d19-ee09-4dac-98f3-cbc4d1354acc")
+		(uuid "407b4a8f-0acb-4016-80ec-2287ce3794cf")
 	)
 	(junction
 		(at 73.66 81.28)
@@ -4657,6 +4674,12 @@
 		(uuid "cd7860ea-7ecc-476b-8964-7b7dbdc5bda0")
 	)
 	(junction
+		(at 55.88 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cee08d26-2333-4e3e-a989-e8e95edb3832")
+	)
+	(junction
 		(at 365.76 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4709,6 +4732,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc02638e-1479-4ea7-be00-1047b412407f")
+	)
+	(junction
+		(at 218.44 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc11978c-3c2d-47a4-821b-09d65297027f")
 	)
 	(no_connect
 		(at 58.42 185.42)
@@ -4880,16 +4909,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 180.34) (xy 53.34 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ad8c8c2-fd06-44cd-8477-399e9f355d57")
-	)
-	(wire
-		(pts
 			(xy 99.06 187.96) (xy 99.06 185.42)
 		)
 		(stroke
@@ -4907,6 +4926,16 @@
 			(type default)
 		)
 		(uuid "0c75168d-c063-4e18-9e3e-be9be6e04f12")
+	)
+	(wire
+		(pts
+			(xy 58.42 165.1) (xy 55.88 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c9f7bc5-4eb4-4883-acb6-c2c278589b67")
 	)
 	(wire
 		(pts
@@ -4950,7 +4979,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 167.64) (xy 58.42 167.64)
+			(xy 36.83 167.64) (xy 40.64 167.64)
 		)
 		(stroke
 			(width 0)
@@ -5260,16 +5289,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 165.1) (xy 58.42 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34553407-a551-4b6c-b66c-1237e33bd5b4")
-	)
-	(wire
-		(pts
 			(xy 297.18 96.52) (xy 297.18 60.96)
 		)
 		(stroke
@@ -5527,6 +5546,16 @@
 			(type default)
 		)
 		(uuid "4bffe61c-342b-416f-828f-2aae01e1b62c")
+	)
+	(wire
+		(pts
+			(xy 55.88 165.1) (xy 55.88 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c3bd23e-f512-4b4c-bceb-ad9cf9e5239f")
 	)
 	(wire
 		(pts
@@ -5800,6 +5829,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 53.34) (xy 223.52 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f6bd3f-f2a6-4449-b571-1c4b0d5987a1")
+	)
+	(wire
+		(pts
 			(xy 73.66 91.44) (xy 76.2 91.44)
 		)
 		(stroke
@@ -6010,7 +6049,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 55.88) (xy 231.14 55.88)
+			(xy 215.9 55.88) (xy 218.44 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6340,7 +6379,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 53.34) (xy 223.52 53.34)
+			(xy 215.9 53.34) (xy 218.44 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6477,6 +6516,16 @@
 			(type default)
 		)
 		(uuid "a01a10fa-de24-4ba8-8c6f-00eea95edaef")
+	)
+	(wire
+		(pts
+			(xy 40.64 167.64) (xy 58.42 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a03d6ac7-b97a-430b-8e38-531fd72e7e0f")
 	)
 	(wire
 		(pts
@@ -6720,6 +6769,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 55.88) (xy 231.14 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbc0b184-8fbb-4bd4-aed7-8fe640417177")
+	)
+	(wire
+		(pts
 			(xy 342.9 147.32) (xy 345.44 147.32)
 		)
 		(stroke
@@ -6920,7 +6979,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 154.94) (xy 53.34 165.1)
+			(xy 53.34 154.94) (xy 53.34 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7612,7 +7671,7 @@
 	)
 	(global_label "IMU_INT"
 		(shape output)
-		(at 50.8 167.64 180)
+		(at 36.83 167.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7622,7 +7681,7 @@
 		)
 		(uuid "68646547-c493-4d3f-8ce1-1fd36db719df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.5576 167.64 0)
+			(at 26.5876 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10380,6 +10439,118 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 218.44 53.34 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44afe6f4-7c05-45de-8fb1-ba8a940a6e9a")
+		(property "Reference" "TP5"
+			(at 218.694 49.022 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SDA_DEBUG"
+			(at 207.772 49.784 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 218.44 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 218.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "nvt"
+			(at 218.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 218.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
+			(at 218.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5210ab6c-811b-45f1-9b2a-cbf094b0c141")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "symbols:VCC")
 		(at 167.64 147.32 0)
 		(unit 1)
@@ -11683,6 +11854,230 @@
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 40.64 167.64 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "642f03fc-88fc-4bb5-930d-3e2230e9ef1d")
+		(property "Reference" "TP6"
+			(at 38.1 163.576 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IMU_INT_DEBUG"
+			(at 28.448 161.036 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 40.64 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "nvt"
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
+			(at 40.64 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16033539-40ab-4209-9566-d4f2404efad7")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 218.44 55.88 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "680c7d5a-e811-4028-8b6e-f50dd636502d")
+		(property "Reference" "TP4"
+			(at 222.25 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SCL_DEBUG"
+			(at 207.518 59.182 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 223.52 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 218.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "nvt"
+			(at 218.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 218.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" ""
+			(at 218.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23484f69-58f7-45c3-9c3a-c6b1c74befc7")
+		)
+		(instances
+			(project "stabielator"
+				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/b247e2e0-2581-4d7d-bb6a-cfa25d5ef6e6"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
