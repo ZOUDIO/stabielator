@@ -778,6 +778,12 @@
           "label": "Partnumber",
           "name": "Partnumber",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manifacturer",
+          "name": "Manifacturer",
+          "show": false
         }
       ],
       "filter_string": "",

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "${Project_name}")
-		(date "2026-09-07")
+		(date "2026-09-20")
 		(rev "${Project_revision}")
 		(company "${Company_name}")
 	)
@@ -7007,7 +7007,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "080a8524-84e4-4b52-922d-3e9d441cbe50")
-		(property "Reference" "R21"
+		(property "Reference" "R16"
 			(at 54.61 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7104,7 +7104,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R21")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -7393,7 +7393,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e56ef19-f63c-4c72-85ae-bc3974db1682")
-		(property "Reference" "TP12"
+		(property "Reference" "TP1"
 			(at 248.666 104.902 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7487,7 +7487,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP12")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -7581,7 +7581,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19c3f12e-be7b-4c0e-9470-1b463be90f87")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 265.811 123.2916 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7677,7 +7677,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7807,7 +7807,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f62ca83-4c77-48db-8be8-8ad4ee29007b")
-		(property "Reference" "C27"
+		(property "Reference" "C26"
 			(at 245.11 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7904,7 +7904,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "C27")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -8380,7 +8380,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "32d26bf7-a3a9-4f16-9c5d-f3f2e45b0fe1")
-		(property "Reference" "R16"
+		(property "Reference" "R27"
 			(at 107.95 118.11 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8497,7 +8497,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R16")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -8514,7 +8514,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34013234-b24b-4255-97ba-c55fd118a447")
-		(property "Reference" "TP15"
+		(property "Reference" "TP7"
 			(at 169.926 40.386 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8608,7 +8608,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP15")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -8780,7 +8780,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "380f6dcb-7ce8-4037-923e-270946b29b02")
-		(property "Reference" "R31"
+		(property "Reference" "R25"
 			(at 181.61 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8877,7 +8877,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R31")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -8894,7 +8894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "381e84ed-d228-4ef0-9276-80be9d502be3")
-		(property "Reference" "TP14"
+		(property "Reference" "TP9"
 			(at 204.724 47.752 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8988,7 +8988,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP14")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -9302,7 +9302,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "430dcbc2-7e12-4d44-9c7d-e2c73f18c091")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 140.97 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9399,7 +9399,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9647,7 +9647,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "514b2c39-ea20-4c3a-a03c-f130cce68451")
-		(property "Reference" "C28"
+		(property "Reference" "C30"
 			(at 269.24 53.848 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9744,7 +9744,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "C28")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -9838,7 +9838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66153c18-c02c-4344-81e3-43b2c79dcd66")
-		(property "Reference" "R15"
+		(property "Reference" "R22"
 			(at 107.95 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9955,7 +9955,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R15")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -9973,7 +9973,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "662cf34e-d044-41b6-ac18-23babfd17a02")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 143.51 75.2474 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10081,7 +10081,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -10098,7 +10098,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6725953f-07f2-46cd-8a07-56c4b02f0e88")
-		(property "Reference" "R19"
+		(property "Reference" "R15"
 			(at 102.87 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10195,7 +10195,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R19")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -10437,7 +10437,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "68060aa9-89d3-455b-9f1f-498f23d0a1a5")
-		(property "Reference" "U9"
+		(property "Reference" "U11"
 			(at 223.52 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10552,7 +10552,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "U9")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -11423,7 +11423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "804eb955-02cc-4877-a165-dc431db98af6")
-		(property "Reference" "TP11"
+		(property "Reference" "TP12"
 			(at 115.57 106.9976 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11517,7 +11517,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP11")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -11611,7 +11611,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "845a8536-9188-42e7-b175-79113e5511bb")
-		(property "Reference" "R30"
+		(property "Reference" "R32"
 			(at 194.31 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11708,7 +11708,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R30")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -12092,7 +12092,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "909c567b-a948-4fec-8d65-6f870b80a3bd")
-		(property "Reference" "R10"
+		(property "Reference" "R9"
 			(at 34.29 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12189,7 +12189,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -12706,7 +12706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a728f12b-5d00-4281-92c6-ea5e00ee76f7")
-		(property "Reference" "U10"
+		(property "Reference" "U9"
 			(at 95.6311 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12840,7 +12840,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "U10")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -12857,7 +12857,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a81c358e-607d-476a-a50b-e053242cef5e")
-		(property "Reference" "R24"
+		(property "Reference" "R21"
 			(at 95.25 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12976,7 +12976,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R24")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -13070,7 +13070,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad5dfb7b-3f89-4480-98c8-3b2dcdc75c95")
-		(property "Reference" "TP16"
+		(property "Reference" "TP13"
 			(at 220.472 55.118 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13164,7 +13164,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP16")
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -13476,7 +13476,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3da1333-f1c5-4bbe-a6fd-35ce08244532")
-		(property "Reference" "R26"
+		(property "Reference" "R24"
 			(at 41.91 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13595,7 +13595,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R26")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -13612,7 +13612,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bacc229e-20ed-41cf-ba3a-01a97af24beb")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at 44.45 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13709,7 +13709,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -13726,7 +13726,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bb5bdc40-5e93-4a64-b709-8db4606084cb")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 199.39 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13823,7 +13823,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -13917,7 +13917,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd37a7ea-ed84-452f-b9a3-5ff7ecbd651a")
-		(property "Reference" "TP3"
+		(property "Reference" "TP10"
 			(at 195.58 105.664 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14011,7 +14011,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP3")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -14413,7 +14413,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd80165a-8446-4c0c-b636-5f38030d5f62")
-		(property "Reference" "R28"
+		(property "Reference" "R20"
 			(at 87.63 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14532,7 +14532,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R28")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -14664,7 +14664,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d1202bf3-f860-4137-8834-1ebc8bc11ff0")
-		(property "Reference" "TP17"
+		(property "Reference" "TP2"
 			(at 66.294 71.374 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14758,7 +14758,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP17")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -14852,7 +14852,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8e638a9-4529-4896-82ed-553894f81a0c")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 188.341 123.2916 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14948,7 +14948,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -15119,7 +15119,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e45be3d6-0374-429f-9258-1f1cbf98cac1")
-		(property "Reference" "R32"
+		(property "Reference" "R26"
 			(at 171.45 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15216,7 +15216,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "R32")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -15234,7 +15234,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3859bd8-e323-4d38-808a-533ececfd704")
-		(property "Reference" "TP13"
+		(property "Reference" "TP11"
 			(at 115.57 131.7624 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15328,7 +15328,7 @@
 		(instances
 			(project "stabielator"
 				(path "/c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3/73929003-3baa-4f9c-89cc-74ae5f550b44"
-					(reference "TP13")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
