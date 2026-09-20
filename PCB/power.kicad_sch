@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "13bcb592-2294-43c1-885b-cf8a76baa039")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "${Project_name}")
 		(date "2026-09-20")
