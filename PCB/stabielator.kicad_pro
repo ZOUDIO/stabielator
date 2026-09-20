@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 2.4,
-          "width": 1.65
+          "height": 0.95,
+          "width": 0.8
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -61,11 +61,11 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.2,
-          "min_island_area": 0.0013161349,
-          "min_thickness": 0.25,
-          "pad_connection": 2,
+          "min_island_area": 10.0,
+          "min_thickness": 0.2,
+          "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
+          "thermal_relief_gap": 0.2,
           "thermal_relief_spoke_width": 0.5
         }
       },
@@ -163,6 +163,14 @@
         ],
         [
           "silk_edge_clearance|149797414|59807867|817668b6-f825-49a4-9acd-5464d3b900cf|14fb2c87-29a0-4972-be47-31c44dde5212",
+          ""
+        ],
+        [
+          "starved_thermal|106943794|93173794|7b6dc940-3ddf-4120-b3f2-ac726ae34cd1|68b0aefc-27cf-41ff-b59b-2ee12597c154|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|125520000|61360000|7b6dc940-3ddf-4120-b3f2-ac726ae34cd1|ba718a9e-71da-4411-b337-de310648e23d|F.Cu",
           ""
         ],
         [
