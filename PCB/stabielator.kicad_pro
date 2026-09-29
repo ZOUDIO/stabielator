@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.95,
-          "width": 0.8
+          "drill": 0.25,
+          "height": 0.5,
+          "width": 0.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -118,27 +118,19 @@
           ""
         ],
         [
-          "items_not_allowed|134055861|50743693|f55fe70c-cf1c-4456-a4c6-73e90bed94d7|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|135000690|50769383|afec0ca1-5be4-4528-af7a-a884237db7f7|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|135340831|50974352|dde3a3a7-39f8-4857-a5b0-a66da64c1f9a|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "items_not_allowed|135650000|52430000|9becdfd1-41c2-4c34-a7ae-b5fd777dc8af|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "lib_footprint_issues|124848622|75000000|dd0fb053-a2ce-432a-b11b-c44ef1c316da|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "lib_footprint_mismatch|138978680|61018788|478ac7ef-d6be-4368-ad4f-31e11e8d673b|00000000-0000-0000-0000-000000000000",
+          "lib_footprint_issues|138978680|61018788|478ac7ef-d6be-4368-ad4f-31e11e8d673b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|104487500|65812500|0ba89f3b-0b5c-4170-9860-21deb1e05b8f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|116652502|66655086|94917079-1fca-4f93-8324-abc3b6cc45f2|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -146,27 +138,19 @@
           ""
         ],
         [
-          "silk_edge_clearance|140799480|50809934|817668b6-f825-49a4-9acd-5464d3b900cf|4d273e0c-a062-48ad-96c3-62262336eea9",
+          "solder_mask_bridge|105441192|92678819|e71a7bb2-3968-4aa6-b051-a3c7f15c3ba2|27b28014-37e6-4339-b636-e49b8b763dff",
           ""
         ],
         [
-          "silk_edge_clearance|141955694|98044306|4fb29f62-b8db-4591-af18-013c81ff35ab|9b9425a2-9ab4-4883-8237-333f6a34be13",
-          ""
-        ],
-        [
-          "silk_edge_clearance|148277228|91722772|4fb29f62-b8db-4591-af18-013c81ff35ab|b8968c81-9e2e-4fc1-bb7b-03801a063064",
-          ""
-        ],
-        [
-          "silk_edge_clearance|149267084|59277537|817668b6-f825-49a4-9acd-5464d3b900cf|66273872-b741-4be0-8a7d-d3eb9953b037",
-          ""
-        ],
-        [
-          "silk_edge_clearance|149797414|59807867|817668b6-f825-49a4-9acd-5464d3b900cf|14fb2c87-29a0-4972-be47-31c44dde5212",
+          "solder_mask_bridge|107438769|94676396|f3eac96e-88f1-43d4-8487-5d0c57ef3130|e8cb558c-9f60-4ca6-888a-c5d10371774f",
           ""
         ],
         [
           "starved_thermal|106943794|93173794|7b6dc940-3ddf-4120-b3f2-ac726ae34cd1|68b0aefc-27cf-41ff-b59b-2ee12597c154|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|124750000|73300000|7b6dc940-3ddf-4120-b3f2-ac726ae34cd1|d305cd74-5739-4b0f-bc2d-e563e9f81d76|F.Cu",
           ""
         ],
         [
@@ -233,7 +217,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -273,7 +257,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1,
-        "min_via_annular_width": 0.15,
+        "min_via_annular_width": 0.125,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -413,106 +397,106 @@
       ],
       [
         0,
-        2,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        2,
-        2,
-        2,
-        2
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        2
-      ],
-      [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        2,
-        1,
-        1,
-        2
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        2
-      ],
-      [
-        0,
         0,
         0,
         1,
         0,
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
         0,
         2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
         2,
         0,
         0,
@@ -779,19 +763,19 @@
           "group_by": false,
           "label": "Manufacturer",
           "name": "Manufacturer",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Partnumber",
           "name": "Partnumber",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Manifacturer",
           "name": "Manifacturer",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -842,7 +826,7 @@
         "uuid": "c0e871b7-8ed4-4f9b-ae4f-e503a34d56f3"
       }
     ],
-    "used_designators": "SW3,TP4-6,TP14-17",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
