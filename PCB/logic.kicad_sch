@@ -12130,7 +12130,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UMW"
+		(property "Manufacturer" "Texas Instruments"
 			(at 241.3 53.34 0)
 			(hide yes)
 			(show_name no)
