@@ -34,8 +34,11 @@ De standaardinstellingen zijn:
 | Feedback aan / uit | Vanaf 1,5° / bij 1,0° of minder |
 | Trilintensiteit | Ongeveer 50% van de aansturing |
 | Pulspatroon | 200 ms aan, 200 ms uit |
-| Maximale feedback | 3 seconden per richting, inclusief uit-fasen |
+| Maximale feedback Pulsen | 600 ms per richting, inclusief uit-fasen |
+| Maximale feedback Continu en Dubbel Pulsen | 3 seconden per richting, inclusief uit-fasen |
 | Automatisch uitschakelen | Na 60 minuten zonder voldoende beweging |
+
+Met de standaardinstellingen geeft **Pulsen** twee pulsen. **Dubbel Pulsen** geeft twee pulsen, een pauze van driemaal de uit-tijd en weer twee pulsen. Bij terugkeer op of onder de uitschakelhoek stopt de reeks.
 
 Na de maximale trilduur moet je eerst terug onder de uitschakelhoek voordat die richting opnieuw trilt. Het accupercentage is een schatting.
 

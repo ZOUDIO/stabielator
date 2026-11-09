@@ -23,16 +23,22 @@ int main() {
   dimmed=dimLed({255,80,255},100);
   assert(dimmed.red==255 && dimmed.green==80 && dimmed.blue==255);
   HapticPattern p;
-  p.start(100,1200,64,true,200,200,2);
+  p.start(100,1200,64,HAPTIC_PULSES,200,200,2);
   assert(p.level(100,1)==64 && p.level(299,1)==64 && p.level(300,1)==0);
   assert(p.level(499,1)==0 && p.level(500,1)==64 && p.level(100,0)==0);
   assert(p.active(1299) && !p.active(1300) && p.level(1300,1)==0);
-  p.start(0xFFFFFF00U,600,64,true,200,200,15);
+  p.start(0xFFFFFF00U,600,64,HAPTIC_PULSES,200,200,15);
   for (unsigned m=0;m<4;++m) assert(p.level(0xFFFFFF01U,m)==64);
   assert(p.active(100) && !p.active(344));
   p.stop();assert(!p.active(0));
+  p.start(100,3000,64,HAPTIC_DOUBLE_PULSES,200,200,2);
+  assert(p.level(100,1)==64 && p.level(300,1)==0 && p.level(500,1)==64);
+  assert(p.level(700,1)==0 && p.level(1299,1)==0 && p.level(1300,1)==64);
+  assert(p.level(1500,1)==0 && p.level(1700,1)==64 && p.level(1900,1)==0);
+  assert(p.level(2300,1)==0 && p.level(1700,0)==0);
+
   // Kalibratiebevestiging: twee korte pulsen op vier motoren.
-  p.start(0,300,64,true,100,100,15);
+  p.start(0,300,64,HAPTIC_PULSES,100,100,15);
   for(unsigned m=0;m<4;++m) {
     assert(p.level(50,m)==64 && p.level(150,m)==0 && p.level(250,m)==64 && p.level(300,m)==0);
   }

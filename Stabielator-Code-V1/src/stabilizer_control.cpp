@@ -36,8 +36,8 @@ void StabilizerControl::begin() {
       _logic.settings=saved;
       if (reset) {
         uint32_t oldVersion; memcpy(&oldVersion,bytes,sizeof(oldVersion));
-        Serial.println(oldVersion>=3 ? "FW-instellingen behouden; debug en teststand gescheiden (v5)." :
-                       "FW-instellingen v1/v2 vervangen door afgesproken defaults v5; WiFi behouden.");
+        Serial.println(oldVersion>=3 ? "FW-instellingen gemigreerd naar v6." :
+                       "FW-instellingen v1/v2 vervangen door afgesproken defaults v6; WiFi behouden.");
         _storageHealthy=prefs.putBytes("fw_config",&saved,sizeof(saved))==sizeof(saved);
       }
     } else if (length) {
@@ -126,14 +126,14 @@ void StabilizerControl::tick() {
   const bool motorsHealthy = _initialized && hapticControl.healthy() && hapticControl.enabled();
   if (_startupCuePending && !_userPaused && !_testMode && imuHealthy && motorsHealthy) {
     _startupCuePending=false;
-    _cue.start(now,80,_logic.settings.strength,false,80,0,15);
+    _cue.start(now,80,_logic.settings.strength,HAPTIC_CONTINUOUS,80,0,15);
   }
   const bool referenceWasValid=_logic.referenceValid;
   if ((!_cue.active(now) && !(_manualActive && !_logic.referenceValid)) || !imuHealthy || !motorsHealthy)
     _logic.update(now, {r.real,r.i,r.j,r.k}, imuHealthy, motorsHealthy, r.sequence);
   else _logic.stopOutputs(); // Geen kalibratiesamples verzamelen tijdens bevestigingstrilling.
   if (!referenceWasValid && _logic.referenceValid && !_testMode && !_userPaused) {
-    _cue.start(now,300,_logic.settings.strength,true,100,100,15);
+    _cue.start(now,300,_logic.settings.strength,HAPTIC_PULSES,100,100,15);
   }
   if (_power.critical || _logic.state == StabilizerState::Inactive) {
     _manualActive = false;
@@ -291,8 +291,11 @@ bool StabilizerControl::testPulse(uint8_t motor, uint8_t strength, uint32_t dura
   if (!hapticControl.healthy() || !hapticControl.enabled()) return false;
   _cue.stop();
   if (!hapticControl.prepare(motor)) return false;
-  _manual.start(millis(),durationMs,strength,pattern && _logic.settings.pattern,
-                _logic.settings.pulseOnMs,_logic.settings.pulseOffMs,uint8_t(1U<<motor));
+  const auto& settings = _logic.settings;
+  const uint8_t mode = pattern ? settings.pattern : uint8_t(HAPTIC_CONTINUOUS);
+  const uint32_t limit = settings.feedbackLimitMs();
+  if (mode != HAPTIC_CONTINUOUS && limit && limit < durationMs) durationMs = limit;
+  _manual.start(millis(),durationMs,strength,mode,settings.pulseOnMs,settings.pulseOffMs,uint8_t(1U<<motor));
   _manualActive=true;
   return _manualActive;
 }

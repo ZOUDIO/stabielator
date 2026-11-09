@@ -25,7 +25,7 @@ Quaternion rotation(float roll, float pitch=0, float yaw=0) {
 void off(const StabilizerLogic& logic) { for(auto level:logic.outputs)assert(level==0); }
 void calibrate(StabilizerLogic& logic, uint32_t start=0, Quaternion reference={}) {
   logic.settings.onDegrees=10; logic.settings.offDegrees=7; logic.settings.strength=127;
-  logic.settings.pattern=0; logic.settings.maxFeedbackMs=0; logic.settings.bootDelayMs=0; logic.settings.calibrationMs=500; logic.begin(start);
+  logic.settings.pattern=HAPTIC_CONTINUOUS; logic.settings.maxContinuousOrDoubleMs=0; logic.settings.bootDelayMs=0; logic.settings.calibrationMs=500; logic.begin(start);
   for(unsigned n=0;n<=25;++n) {
     auto q=reference;
     if(n%2){q.w=-q.w;q.x=-q.x;q.y=-q.y;q.z=-q.z;}
@@ -40,14 +40,14 @@ int main() {
   assert(s.settings.motorMap[0]==3&&s.settings.motorMap[1]==1&&s.settings.motorMap[2]==2&&s.settings.motorMap[3]==0);
   assert(s.settings.onDegrees==1.5f && s.settings.offDegrees==1.0f);
   assert(s.settings.strength==64 && s.settings.pattern==1 && s.settings.diagonal==1);
-  assert(s.settings.bootDelayMs==3000 && s.settings.maxFeedbackMs==3000);
+  assert(s.settings.bootDelayMs==3000 && s.settings.maxFeedbackMs==600 && s.settings.maxContinuousOrDoubleMs==3000);
   assert(s.settings.pulseOnMs==200 && s.settings.pulseOffMs==200);
   assert(s.settings.inactivityMinutes==60 && s.settings.activityDegrees==1);
   // Oud record heeft andere grootte; lees eerst de versie en reset bewust.
   unsigned char legacy[64]={}; uint32_t version=2; std::memcpy(legacy,&version,4);
   StabilizerSettings saved; saved.onDegrees=15; bool reset=false;
   assert(decodeSettingsRecord(legacy,sizeof(legacy),saved,reset) && reset);
-  assert(saved.version==5 && saved.onDegrees==1.5f && saved.strength==64);
+  assert(saved.version==6 && saved.onDegrees==1.5f && saved.strength==64);
   version=1;std::memcpy(legacy,&version,4);
   assert(decodeSettingsRecord(legacy,sizeof(legacy),saved,reset) && reset);
   saved.onDegrees=4;saved.offDegrees=2;
@@ -56,17 +56,31 @@ int main() {
   assert(!decodeSettingsRecord(&saved,sizeof(saved)-1,decoded,reset));
   // Versie 3: behoud alle waarden; de oude paddingbyte is geen helderheid.
   saved.version=3;saved.ledBrightness=255;saved.strength=93;saved.ledEnabled=0;
-  assert(decodeSettingsRecord(&saved,sizeof(saved),decoded,reset) && reset);
-  assert(decoded.version==5 && decoded.ledBrightness==100 && decoded.onDegrees==4 && decoded.offDegrees==2);
+  assert(decodeSettingsRecord(&saved,LEGACY_SETTINGS_SIZE,decoded,reset) && reset);
+  assert(decoded.version==6 && decoded.ledBrightness==100 && decoded.onDegrees==4 && decoded.offDegrees==2);
   assert(decoded.strength==93 && decoded.ledEnabled==0 && decoded.motorMap[0]==saved.motorMap[0]);
   decoded.ledBrightness=25;
   assert(decodeSettingsRecord(&decoded,sizeof(decoded),saved,reset) && !reset && saved.ledBrightness==25);
   saved.version=4;saved.debugEnabled=1;saved.testMode=255;
-  assert(decodeSettingsRecord(&saved,sizeof(saved),decoded,reset) && reset);
-  assert(decoded.version==5 && decoded.debugEnabled==1 && decoded.testMode==1);
+  assert(decodeSettingsRecord(&saved,LEGACY_SETTINGS_SIZE,decoded,reset) && reset);
+  assert(decoded.version==6 && decoded.debugEnabled==1 && decoded.testMode==1);
   saved=decoded;saved.version=3;saved.testMode=255;
-  assert(decodeSettingsRecord(&saved,sizeof(saved),decoded,reset) && reset);
+  assert(decodeSettingsRecord(&saved,LEGACY_SETTINGS_SIZE,decoded,reset) && reset);
   assert(decoded.debugEnabled==1 && decoded.testMode==0);
+  saved=decoded; saved.version=5;
+  saved.pattern=HAPTIC_PULSES;
+  saved.maxFeedbackMs=3000;
+  assert(decodeSettingsRecord(&saved,LEGACY_SETTINGS_SIZE,decoded,reset) && reset);
+  assert(decoded.pattern==HAPTIC_PULSES && decoded.maxFeedbackMs==600 && decoded.maxContinuousOrDoubleMs==3000);
+  saved.maxFeedbackMs=600;
+  assert(decodeSettingsRecord(&saved,LEGACY_SETTINGS_SIZE,decoded,reset) && reset);
+  assert(decoded.maxFeedbackMs==600 && decoded.maxContinuousOrDoubleMs==3000);
+  saved.maxFeedbackMs=2400;
+  assert(decodeSettingsRecord(&saved,LEGACY_SETTINGS_SIZE,decoded,reset) && reset);
+  assert(decoded.maxFeedbackMs==2400 && decoded.maxContinuousOrDoubleMs==3000);
+  saved.pattern=HAPTIC_CONTINUOUS;
+  assert(decodeSettingsRecord(&saved,LEGACY_SETTINGS_SIZE,decoded,reset) && reset);
+  assert(decoded.maxFeedbackMs==600 && decoded.maxContinuousOrDoubleMs==2400);
   saved.version=999;assert(!decodeSettingsRecord(&saved,sizeof(saved),decoded,reset));
   auto invalid=s.settings;invalid.offDegrees=invalid.onDegrees;assert(!validSettings(invalid));
   invalid=s.settings;invalid.ledBrightness=101;assert(!validSettings(invalid));
@@ -124,6 +138,51 @@ int main() {
   s.update(1600,rotation(20),true,true,34);off(s);
   s.update(1620,rotation(0),true,true,35);off(s);
   s.update(1640,rotation(20),true,true,36);assert(s.outputs[PLUS_X]==127);
+  StabilizerLogic pulses;
+  calibrate(pulses);
+  pulses.settings.pattern=HAPTIC_PULSES;
+  auto at = [&](uint32_t now, float angle, bool on) {
+    pulses.update(now,rotation(angle),true,true,now);
+    assert(pulses.outputs[PLUS_X] == (on ? 127 : 0));
+  };
+  at(600,20,true);
+  at(799,20,true);
+  at(800,20,false);
+  at(1000,20,true);
+  at(1199,20,true);
+  at(1200,20,false);
+  at(1400,20,false);
+  at(1500,0,false);
+
+  pulses.settings.maxFeedbackMs=3000;
+  at(1600,20,true);
+  at(2000,20,true);
+  at(2400,20,true); // Langer ingestelde trilduur laat extra pulsen toe.
+  at(2500,0,false);
+
+  pulses.settings.pattern=HAPTIC_DOUBLE_PULSES;
+  pulses.settings.maxContinuousOrDoubleMs=3000;
+  at(2600,20,true);
+  at(2800,20,false);
+  at(3000,20,true);
+  at(3199,20,true);
+  at(3200,20,false);
+  at(3799,20,false);
+  at(3800,20,true);
+  at(4000,20,false);
+  at(4200,20,true);
+  at(4399,20,true);
+  at(4400,20,false);
+  at(5000,20,false);
+  at(5100,0,false);
+  at(5200,20,true);
+  at(5600,20,true);
+  at(5800,0,false); // Onder de uitschakeldrempel tijdens de pauze.
+  at(6400,8,false); // Tussen de drempels blijft het tweede paar uit.
+  at(6500,20,true); // Nieuwe activering begint bij de eerste puls.
+  at(6600,0,false); // Ook een lopende puls stopt direct.
+  at(6900,8,false);
+
   // Willekeurige vaste montagepositie wordt de referentie.
   StabilizerLogic mounted;const auto reference=rotation(35,-25,70);calibrate(mounted,0,reference);
   const auto relative=mounted.relativeOrientation(multiply(reference,rotation(15)));
@@ -166,7 +225,7 @@ int main() {
   for(uint32_t t=600;t<=3700000;t+=200)disabled.update(t,{},true,true,t);
   assert(disabled.state==StabilizerState::Active);
   // Max-limiet overleeft meetverlies, motorfout en het opslaan van instellingen.
-  StabilizerLogic limited;calibrate(limited);limited.settings.maxFeedbackMs=100;
+  StabilizerLogic limited;calibrate(limited);limited.settings.maxContinuousOrDoubleMs=100;
   limited.update(600,rotation(20),true,true,30);assert(limited.outputs[PLUS_X]==127);
   limited.update(700,rotation(20),true,true,31);off(limited);
   limited.update(720,rotation(20),false,true,32);off(limited);
@@ -181,7 +240,7 @@ int main() {
   limited.update(860,rotation(0),true,true,38);off(limited);
   limited.update(880,rotation(20),true,true,39);assert(limited.outputs[PLUS_X]==127);
   // Ook voor verstrijken van de limiet mogen meetgaten/opslaan de begintijd niet verschuiven.
-  StabilizerLogic interrupted;calibrate(interrupted);interrupted.settings.maxFeedbackMs=100;
+  StabilizerLogic interrupted;calibrate(interrupted);interrupted.settings.maxContinuousOrDoubleMs=100;
   interrupted.update(600,rotation(20),true,true,30);
   interrupted.update(620,rotation(20),false,true,31);off(interrupted);
   changed=interrupted.settings;changed.debugEnabled=1;assert(interrupted.applySettings(changed));

@@ -8,7 +8,7 @@
 
 # Stabielator-documentatie
 
-Firmware **0.5.1** - bijgewerkt op **9 november 2026**.
+Firmware **0.5.2** - bijgewerkt op **9 november 2026**.
 
 - [Gebruiksaanwijzing](gebruiksaanwijzing.md): aansluiten, instellen en gebruiken.
 - [Uitleg over de code](code-uitleg.md): hoe de software werkt en waar onderdelen staan.

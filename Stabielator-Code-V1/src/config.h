@@ -13,7 +13,7 @@
 #endif
 constexpr bool HAPTIC_IS_LRA = STABIELATOR_LRA != 0;
 
-#define APP_VERSION_TEXT "0.5.1"
+#define APP_VERSION_TEXT "0.5.2"
 constexpr char APP_VERSION[] = APP_VERSION_TEXT;
 #if STABIELATOR_LRA
 constexpr char OTA_TARGET[] = "stab-c3-lra";

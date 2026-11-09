@@ -40,7 +40,7 @@ String settingsJson(const StabilizerSettings& s) {
 #define FIELD(name) json += "\"" #name "\":" + String(s.name) + ",";
   FIELD(onDegrees) FIELD(offDegrees) FIELD(strength) FIELD(pattern) FIELD(inactivityMinutes) FIELD(activityDegrees)
   FIELD(ledEnabled) FIELD(ledBrightness) FIELD(bootDelayMs) FIELD(calibrationMs) FIELD(diagonal) FIELD(pulseOnMs)
-  FIELD(pulseOffMs) FIELD(maxFeedbackMs) FIELD(axisRotationDegrees) FIELD(batteryLowVolts)
+  FIELD(pulseOffMs) FIELD(maxFeedbackMs) FIELD(maxContinuousOrDoubleMs) FIELD(axisRotationDegrees) FIELD(batteryLowVolts)
   FIELD(batteryCriticalVolts) FIELD(debugEnabled) FIELD(testMode)
 #undef FIELD
   for (unsigned m=0; m<4; ++m) json += "\"motor" + String(m) + "\":" + String(s.motorMap[m]) + (m<3 ? "," : "}");
@@ -182,7 +182,7 @@ void WebStatusServer::attach(WebServer& server, bool captive) {
 #define READ(name) ok = readField(server,#name,s.name) && ok;
     READ(onDegrees) READ(offDegrees) READ(strength) READ(pattern) READ(inactivityMinutes) READ(activityDegrees) READ(ledEnabled) READ(ledBrightness)
     READ(bootDelayMs) READ(calibrationMs) READ(diagonal) READ(pulseOnMs) READ(pulseOffMs)
-    READ(maxFeedbackMs) READ(axisRotationDegrees) READ(batteryLowVolts) READ(batteryCriticalVolts) READ(debugEnabled) READ(testMode)
+    READ(maxFeedbackMs) READ(maxContinuousOrDoubleMs) READ(axisRotationDegrees) READ(batteryLowVolts) READ(batteryCriticalVolts) READ(debugEnabled) READ(testMode)
 #undef READ
     for(unsigned m=0;m<4;++m)ok=readField(server,("motor"+String(m)).c_str(),s.motorMap[m])&&ok;
     if(!ok||!validSettings(s)){server.send(400,"text/plain; charset=utf-8","Ongeldige instellingen: uitschakelhoek moet lager zijn dan inschakelhoek; elke motor moet uniek zijn; controleer alle bereiken.");return;}

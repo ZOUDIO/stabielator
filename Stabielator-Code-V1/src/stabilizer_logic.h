@@ -10,38 +10,48 @@
 #include <cstdint>
 #include <cstring>
 #include <cstddef>
+#include "haptic_pattern.h"
 #include "orientation.h"
 
 struct StabilizerSettings {
-  uint32_t version = 5;
+  uint32_t version = 6;
   float onDegrees = 1.5f, offDegrees = 1.0f;
   uint32_t bootDelayMs = 3000, calibrationMs = 1000;
-  uint32_t pulseOnMs = 200, pulseOffMs = 200, maxFeedbackMs = 3000;
+  uint32_t pulseOnMs = 200, pulseOffMs = 200, maxFeedbackMs = 600;
   uint32_t inactivityMinutes = 60;
   float activityDegrees = 1.0f;
   float axisRotationDegrees = 0;
   float batteryLowVolts = 3.5f, batteryCriticalVolts = 3.2f;
-  uint8_t strength = 64, pattern = 1, diagonal = 1, ledEnabled = 1;
+  uint8_t strength = 64, pattern = HAPTIC_PULSES, diagonal = 1, ledEnabled = 1;
   uint8_t debugEnabled = 0;
   uint8_t motorMap[4] = {3, 1, 2, 0}; // +X -> motor 4, -X -> 2, +Y -> 3, -Y -> 1.
   uint8_t ledBrightness = 100; // Procenten; gebruikt een voormalige paddingbyte.
   uint8_t testMode = 0;
+  uint32_t maxContinuousOrDoubleMs = 3000;
+
+  uint32_t feedbackLimitMs() const {
+    return pattern == HAPTIC_PULSES ? maxFeedbackMs : maxContinuousOrDoubleMs;
+  }
 };
+constexpr size_t LEGACY_SETTINGS_SIZE = 64;
 static_assert(offsetof(StabilizerSettings,ledBrightness)==61 &&
-              offsetof(StabilizerSettings,testMode)==62 && sizeof(StabilizerSettings)==64,
+              offsetof(StabilizerSettings,testMode)==62 &&
+              offsetof(StabilizerSettings,maxContinuousOrDoubleMs)==LEGACY_SETTINGS_SIZE &&
+              sizeof(StabilizerSettings)==68,
               "Controleer compatibiliteit met opgeslagen instellingen.");
 
 /** @brief Valideert eindige meetgrenzen, tijdslimieten en een unieke motor per richting. */
 inline bool validSettings(const StabilizerSettings& s) {
-  if (s.version != 5 || s.testMode > 1 || s.ledBrightness > 100 || !std::isfinite(s.onDegrees) || !std::isfinite(s.offDegrees) ||
+  if (s.version != 6 || s.testMode > 1 || s.ledBrightness > 100 || !std::isfinite(s.onDegrees) || !std::isfinite(s.offDegrees) ||
       s.onDegrees < 0.1f || s.onDegrees > 60 || s.offDegrees < 0 ||
       s.offDegrees >= s.onDegrees || s.bootDelayMs > 60000 ||
       s.calibrationMs < 500 || s.calibrationMs > 5000 ||
       s.pulseOnMs < 20 || s.pulseOnMs > 1000 || s.pulseOffMs < 20 ||
-      s.pulseOffMs > 5000 || s.maxFeedbackMs > 60000 || s.inactivityMinutes > 1440 ||
+      s.pulseOffMs > 5000 || s.maxFeedbackMs > 60000 || s.maxContinuousOrDoubleMs > 60000 ||
+      s.inactivityMinutes > 1440 ||
       !std::isfinite(s.activityDegrees) || s.activityDegrees < 0.1f || s.activityDegrees > 30 ||
       !std::isfinite(s.axisRotationDegrees) || std::fabs(s.axisRotationDegrees) > 180 ||
-      s.strength < 1 || s.strength > 127 || s.pattern > 1 || s.diagonal > 1 ||
+      s.strength < 1 || s.strength > 127 || s.pattern > HAPTIC_DOUBLE_PULSES || s.diagonal > 1 ||
       s.ledEnabled > 1 || s.debugEnabled > 1 || !std::isfinite(s.batteryLowVolts) ||
       !std::isfinite(s.batteryCriticalVolts) || s.batteryCriticalVolts < 3.0f ||
       s.batteryLowVolts > 4.1f || s.batteryCriticalVolts >= s.batteryLowVolts) return false;
@@ -52,7 +62,7 @@ inline bool validSettings(const StabilizerSettings& s) {
 
 /**
  * @brief Valideert een opgeslagen record en migreert ondersteunde oudere versies.
- * @details Versie 1/2 krijgt standaardinstellingen; versie 3/4 behoudt compatibele waarden.
+ * @details Versie 1/2 krijgt standaardinstellingen; versie 3–5 behoudt compatibele waarden.
  * De aparte opgeslagen gebruikerspauze wordt hierdoor niet gewijzigd.
  * @param bytes Opgeslagen record met minimaal een versienummer.
  * @param size Aantal beschikbare bytes.
@@ -66,17 +76,24 @@ inline bool decodeSettingsRecord(const void* bytes, size_t size, StabilizerSetti
   uint32_t version;
   std::memcpy(&version,bytes,sizeof(version));
   if (version==1 || version==2) { result=StabilizerSettings{}; reset=true; return true; }
-  if ((version!=3 && version!=4 && version!=5) || size!=sizeof(result)) return false;
+  const bool legacy = version>=3 && version<=5;
+  if ((!legacy && version!=6) || size!=(legacy ? LEGACY_SETTINGS_SIZE : sizeof(result))) return false;
+  const StabilizerSettings defaults;
   StabilizerSettings candidate;
-  std::memcpy(&candidate,bytes,sizeof(candidate));
-  if (version==3) candidate.ledBrightness=100;
-  if (version<5) {
+  std::memcpy(&candidate,bytes,size);
+  if (legacy) {
+    if (candidate.pattern > HAPTIC_PULSES) return false;
+    if (version==3) candidate.ledBrightness=100;
     // v4 gebruikte debugEnabled ook als opgeslagen teststand. Behoud de motorpauze.
-    candidate.testMode=version==4 ? candidate.debugEnabled : 0;
-    candidate.version=5;
+    if (version<5) candidate.testMode=version==4 ? candidate.debugEnabled : 0;
+    // Behoud de aangepaste limiet voor het opgeslagen profiel en vervang de oude pulsdefault.
+    if (candidate.pattern == HAPTIC_CONTINUOUS) candidate.maxContinuousOrDoubleMs=candidate.maxFeedbackMs;
+    if (candidate.pattern == HAPTIC_CONTINUOUS || candidate.maxFeedbackMs==defaults.maxContinuousOrDoubleMs)
+      candidate.maxFeedbackMs=defaults.maxFeedbackMs;
+    candidate.version=defaults.version;
   }
   if (!validSettings(candidate)) return false;
-  reset=version<5;
+  reset=legacy;
   result=candidate; return true;
 }
 
@@ -216,21 +233,22 @@ class StabilizerLogic {
     state = StabilizerState::Active;
     updateOrientation(q);
     const float direction[4] = {tiltRoll, -tiltRoll, tiltPitch, -tiltPitch};
+    const uint32_t limit = settings.feedbackLimitMs();
     int strongest = -1;
     for (unsigned n = 0; n < 4; ++n) {
       if (direction[n] <= settings.offDegrees) { _active[n] = false; _limited[n] = false; }
       else if (!_active[n] && !_limited[n] && direction[n] >= settings.onDegrees) {
         _active[n] = true; _activeAt[n] = now;
       }
-      if (_active[n] && settings.maxFeedbackMs && now - _activeAt[n] >= settings.maxFeedbackMs) {
+      if (_active[n] && limit && now - _activeAt[n] >= limit) {
         _active[n] = false; _limited[n] = true; // Pas herbewapenen onder off-grens.
       }
       if (_active[n] && (strongest < 0 || direction[n] > direction[strongest])) strongest = n;
     }
     for (unsigned n = 0; n < 4; ++n) {
       if (!_active[n] || (!settings.diagonal && strongest != int(n))) continue;
-      const bool on = !settings.pattern ||
-        (now - _activeAt[n]) % (settings.pulseOnMs + settings.pulseOffMs) < settings.pulseOnMs;
+      const bool on = hapticPatternOn(settings.pattern, now - _activeAt[n],
+                                      settings.pulseOnMs, settings.pulseOffMs);
       if (on) outputs[settings.motorMap[n]] = settings.strength;
     }
   }
